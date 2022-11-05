@@ -1,0 +1,19 @@
+{
+  "name": "css-importer",
+  "version": "1.0.0",
+  "description": "import local css files into single file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyitstay11/css-importer.git"
+  },
+  "author": "Tayyab <heyitstay011@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heyitstay11/css-importer/issues"
+  },
+  "homepage": "https://github.com/heyitstay11/css-importer#readme"
+}
