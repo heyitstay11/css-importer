@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 
 var { readFile, writeFile } = require("fs/promises");
@@ -11,10 +12,11 @@ var pathToCSSFile = join(currDir, cssDir, cssFile);
 var fileStr;
 var opts = { encoding: "utf-8" };
 var regex = /@import\s?(url\()?\".*css\"\)?;/gi;
+
 (async () => {
   try {
     fileStr = await readFile(pathToCSSFile, opts);
-    const result = fileStr.match(regex);
+    const result = fileStr.match(regex) || [];
     for await (const res of result) {
       try {
         const relativePath = res.split('"')[1];
